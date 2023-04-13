@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Listing</title>
+</head>
+<body>
+	<h1>Movie Listing</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Release Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for movie in movies %}
+			<tr>
+				<td>{{ movie[0] }}</td>
+				<td>{{ movie[1] }}</td>
+				<td>{{ movie[2] }}</td>
+				<td>{{ movie[3] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
